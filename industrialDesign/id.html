@@ -1,0 +1,297 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!-- MD Style -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Major Style -->
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="bookmark" type="image/x-icon" href="../img/favicon.ico"/>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="icon" href="../img/favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>MUCHAO</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class = "row">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="logo" class="navbar-brand col-md-12" href="#selected" data-target="#selected" data-toggle="tab" >
+						<img class= "img-responsive" src="../img/logo_nav.png" alt="MT DESIGN" onclick="makeSelectedActive()">
+					</a>
+
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+
+						<li>
+							<a href="../selectedWorks/selected.html"><span>SELECTED WORKS</span></a>
+						</li>
+
+						<li class="active" id="selectedLink">
+							<a href="id.html"><span>INDUSTRIAL DESIGN</span></a>
+						</li>
+						<li>
+							<a href="#RandE" data-target="#RandE" data-toggle="tab"><span>RESEARCH & EVALUATION</span></a>
+						</li>
+						<li>
+							<a href="#about" data-target="#about" data-toggle="tab"><span>ABOUT ME</span></a>
+						</li>                       
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</nav>
+
+	<script>
+		function makeSelectedActive()
+		{
+			$('li.active').removeClass('active');
+			document.getElementById("selectedLink").setAttribute("class","active");
+
+		}
+		$(document).click(function (event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse");               
+			var _opened = $navbar.hasClass("in");
+			if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+				$navbar.collapse('hide');
+			}
+		});
+
+	</script>
+
+
+	<div class="container">
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="selected">
+
+
+					<div class="row">
+						<div id="intro">
+							<h2>HELLO!</h2>
+							<p>
+								I am Muchao, previous Product Design Intern @Uber, and current MS-HCI student @Georgia-Tech, graduating in May 2018.
+							</p>
+							<p>
+
+								While being obsessed with visualizing and communicating innovative ideas and every little detail in design, I also embrace the UCD process. I've had a lot of fun researching, designing, prototyping and evaluating designs.
+							</p>
+							<p>
+
+								Seeking UX/Product design full-time opportunities starting from May 2018!
+							</p>
+							<p>
+								Here is my <a class="info" href="file/UX-ProductDesign_Muchao.pdf"> Resume</a>. Also, I write blogs on <a href="https://medium.com/@muchao">Medium</a> and <a href="https://www.zhihu.com/people/tang-mu-chao-tommy">知乎</a>, and I <a href="https://twitter.com/Muchao94">Tweet</a> from time to time.
+
+							</p>
+						</div>
+
+						<!-- cursor hovering on the pictures showing detailed information -->
+						<div id="page" class="projects">
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="selectedWorks/oneuber.html">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/OneUber - Uber is an ecosystem.png" alt="oneuber">
+										<div class="overlayText fadeIn-bottom"><b>Uber is an ecosystem</b><br>UX | UI</div>
+									</a>
+								</div>
+
+								<div class="project-title"><h4>OneUber</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/YOZO Office - Redefine online collaboration.png" alt="scenario of using YOZO mobile app">
+										<div class="overlayText"><b>Redefine e-collaboration</b><br>UX | UI</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>YOZO Office App</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/SimpleTrac - Glucose management product design.png" alt="User scenario with products">
+										<div class="overlayText"><b>Glucose Management</b> <br>Product | UX | UI</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>SimpleTrac</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/Momenta - The fitness app.png" alt="Running scene with logo">
+										<div class="overlayText"><b>The Fitness App</b><br>UX | UI</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>Momenta App</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/Lonely Mountain VR.png" alt="VR poster">
+										<div class="overlayText"><b>The Hobbit</b><br>VR | Interactive Narration</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>Lonely Mountain VR</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/G-Fancy - Guitar self-teaching product.png" alt="Rendered scenario">
+										<div class="overlayText">
+										<b>Easy Guitar Self-teaching</b><br>Product | UX | UI</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>Guitar Fancy</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/Walmart ShopAR - Future shopping with AR.png" alt="video screen">
+										<div class="overlayText"><b>Seamless Shopping With AR</b><br>Service | UX | UI</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>Walmart ShopAR</h4></div>
+							</div>
+							<div class="project col-lg-3 col-sm-6">
+								<div class="projectContent">
+									<a href="#" target="blank">
+										<div class="blackOverlay"></div>
+										<img class="projectCover" src="img/coversFinal/Backbone - Posture Reminder.png" alt="prototype">
+										<div class="overlayText"><b>Posture Reminder</b><br>Product | Prototype</div>
+									</a>
+								</div>
+								<div class="project-title"><h4>Backbone</h4></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="tab-pane fade" id="id">
+					<div class="row responsive_offset">
+						<div class="container">
+							<div class="grids">
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png" alt="Architecture">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png" alt="Architecture">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="RandE">
+					<div class="row responsive_offset">
+						<div class="container">
+							<div class="grids">
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png" alt="Architecture">
+									<div class="project-title"></div>
+								</div>
+								<div class="project col-lg-3 col-sm-6">
+									<img class="projectCover" src="img/1.png">
+									<div class="project-title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="about">
+
+					<h2>WELCOME!</h2>
+					<p>
+						Hi! I am Muchao, Currently I am working in UBER as a product designer!
+					</p>
+
+					<h4>My capability</h4>
+					<p>
+						-I have a solid understanding of User-Centered Design process, as well as strong UX/Product design skills, research skills, communication skills, experience with front-end developing, and, huge passion for design! 
+						-I understand how to work alone or in a team as well. 
+						-I am a fast thinker and trying to sharpen my mind all the time!
+						-I always have an open mind to absorb new knowledge!
+					</p>
+					<p>Here is my <a href="https://drive.google.com/open?id=0B3oZZlibR6_xdmVmQXpqSnE3dzA">Resume</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-social-icons">
+				<h4>Drop me a line?</h4>
+				<ul class="social-icons">
+					<li><a href="https://www.linkedin.com/in/muchao/" class="social-icon"> <i class="fa fa-linkedin hvr-shadow"></i></a></li>
+					<li><a href="hellotommy1994@gmail.com" class="social-icon"> <i class="fa fa-envelope hvr-shadow"></i></a></li>
+					<li><a href="https://medium.com/@muchao" class="social-icon"> <i class="fa fa-medium hvr-shadow"></i></a></li>
+					<li><a href="https://twitter.com/Muchao94" class="social-icon"> <i class="fa fa-twitter hvr-shadow"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</body>
